@@ -5,8 +5,6 @@ html {
 body {
     font-family: Quicksand, sans-serif;
     background-color: #ffff;
-	background-size: cover;
-    height: calc(100vh - 164px);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -60,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .title-home {
     background-color:#eeebe3;
-    margin-top: 13%;
+    margin-top: 8%;
     text-align: center;
     text-transform: uppercase;
     font-size: 24px;
@@ -96,14 +94,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home-container {
-    margin-top:8%;
+    margin-top:15%;
 }
 
 /* Media queries */
 
 @media only screen and (max-width: 1000px) {
     .title-home {
-        margin-top:30%;
+        margin-top:10%;
     }}
 
 @media only screen and (max-width: 600px) {
@@ -111,19 +109,29 @@ h1, h2, h3, h4, h5, h6 {
         font-size:25px;
     }
     ul {
-        font-size: 15px;
+        font-size: 13px;
     }
     .carousel img {
         max-height: 350px;
         max-width: 350px;
     }
     .title-home {
-        margin-top:40%;
+        margin-top:20%;
     }
 }
 
 @media only screen and (max-width: 400px) {
     .title-home {
-        margin-top:60%;
+        margin-top:30%;
     }
+}
+
+/* Navbar */
+#main-nav {
+    background-color: white;
+}
+
+.nav-link {
+    color: #21403C !important;
+    font-family: Alice, sans-serif;
 }

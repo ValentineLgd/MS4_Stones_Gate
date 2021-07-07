@@ -93,6 +93,16 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #63BFB5;
 }
 
+.btn-blue {
+    background-color: #63BFB5;
+    padding:8px;
+    color: white;
+}
+
+.btn-blue:hover {
+    background-color: #BF77BB;
+}
+
 .home-container {
     margin-top:15%;
 }

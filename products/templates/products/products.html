@@ -18,7 +18,17 @@ diploma -->
         <div class="row">
             <div class="col">
                 <h3 class="margin-product title-product">Products</h3>
-            </div>
+                {% for c in current_categories %}
+                    <a class="btn-container text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+                        <span class="btn-blue">{{ c.friendly_name }}</span>
+                    </a>
+                {% endfor %}
+                {% for m in current_moods %}
+                    <a class="btn-container text-decoration-none" href="{% url 'products' %}?mood={{ m.name }}">
+                        <span class="btn-blue">{{ m.friendly_name }}</span>
+                    </a>
+                {% endfor %}
+        </div>
         </div>
         <div class="row">
             <div class="product-container col-10 offset-1">
@@ -49,6 +59,30 @@ diploma -->
                                         {% else %}
                                             <small class="color-product">No Rating</small>
                                         {% endif %}
+                                        {% if product.category and product.mood %}
+                        <p class="small mt-1 mb-0">
+                            <a class="color-product" href="{% url 'products' %}?category={{ product.category.name }}">
+                                <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                            </a>
+                        </p>
+                        <p class="small mt-1 mb-0">
+                            <a class="color-product" href="{% url 'products' %}?mood={{ product.mood.name }}">
+                                <i class="far fa-smile"></i> {{ product.mood.friendly_name }}
+                            </a>
+                        </p>
+                    {% elif product.category and not product.mood %}
+                        <p class="small mt-1 mb-0">
+                            <a class="color-product" href="{% url 'products' %}?category={{ product.category.name }}">
+                                <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                            </a>
+                        </p>
+                    {% elif product.mood and not product.category %}
+                        <p class="small mt-1 mb-0">
+                            <a class="color-product" href="{% url 'products' %}?mood={{ product.mood.name }}">
+                                <i class="far fa-smile"></i> {{ product.mood.friendly_name }}
+                            </a>
+                        </p>
+                    {% endif %}
                                     </div>
                                 </div>
                             </div>

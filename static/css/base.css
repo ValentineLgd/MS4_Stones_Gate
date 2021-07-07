@@ -136,6 +136,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Alice, sans-serif;
 }
 
+.btn-form {
+    background-color: #21403C;
+    color:white;
+}
+
+.center {
+    margin:auto;
+}
+
 /* Products - Design inspired by Boutique Ado Products page */
 
 .overlay {

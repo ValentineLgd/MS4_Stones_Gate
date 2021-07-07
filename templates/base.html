@@ -36,13 +36,27 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
-        <div class="row navbar d-none d-lg-flex">
-            <div class="col-12 col-lg-5 text-center text-lg-left">
+        <div class="row navbar pt-lg-2 d-none d-lg-flex">
+            <div class="col-12 col-lg-4 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link">
                     <h2 class="logo"><strong>STONES</strong> <i class="far fa-gem"></i> GATE</h2>
                 </a>
             </div>
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-lg-4 center my-auto py-1 py-lg-0">
+                <form method="GET" action="{% url 'products' %}">
+                    <div class="input-group w-100">
+                        <input class="form-control" type="text" name="q" placeholder="Search a product">
+                        <div class="input-group-append">
+                            <button class="form-control btn-form" type="submit">
+                                <span class="icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-lg-4">
                 <ul class="list-inline list-unstyled text-center text-lg-right">
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

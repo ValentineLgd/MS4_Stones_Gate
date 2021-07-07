@@ -18,17 +18,28 @@ diploma -->
         <div class="row">
             <div class="col">
                 <h3 class="margin-product title-product">Products</h3>
-                {% for c in current_categories %}
-                    <a class="btn-container text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                        <span class="btn-blue">{{ c.friendly_name }}</span>
-                    </a>
-                {% endfor %}
-                {% for m in current_moods %}
-                    <a class="btn-container text-decoration-none" href="{% url 'products' %}?mood={{ m.name }}">
-                        <span class="btn-blue">{{ m.friendly_name }}</span>
-                    </a>
-                {% endfor %}
-        </div>
+                    <div class="btn-container">
+                        <a class="text-decoration-none" href="{% url 'products' %}?mood=fun_mood_category">
+                            <span class="btn-blue">Funny</span>
+                        </a>
+                        <a class="text-decoration-none" href="{% url 'products' %}?mood=energetic_mood_category">
+                            <span class="btn-blue">Energetic</span>
+                        </a>
+                        <a class="text-decoration-none" href="{% url 'products' %}?mood=	peace_mood_category">
+                            <span class="btn-blue">Peaceful</span>
+                        </a>
+                        <i class="gem-product color-product far fa-gem"> </i>
+                        <a class="text-decoration-none" href="{% url 'products' %}?category=necklaces_category">
+                            <span class="btn-blue">Necklaces</span>
+                        </a>
+                        <a class="text-decoration-none" href="{% url 'products' %}?category=earings_category">
+                            <span class="btn-blue">Earings</span>
+                        </a>
+                        <a class="text-decoration-none" href="{% url 'products' %}?category=bracelets_category">
+                            <span class="btn-blue">Bracelets</span>
+                        </a>
+                    </div>
+            </div>
         </div>
         <div class="row">
             <div class="product-container col-10 offset-1">

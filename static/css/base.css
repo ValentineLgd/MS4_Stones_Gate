@@ -34,9 +34,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .list-inline-item a:hover {
-    border-bottom: 2px solid #63BFB5;
-    border-right: 2px solid #63BFB5;
-    border-left: 2px solid #63BFB5;
+    background-color: #63BFB5;
+    color:#eeebe3;
 }
 
 .carousel {
@@ -96,6 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-blue {
     background-color: #63BFB5;
     padding:8px;
+    margin:5px;
     color: white;
 }
 
@@ -107,12 +107,17 @@ h1, h2, h3, h4, h5, h6 {
     margin-top:15%;
 }
 
+.gem-product {
+    margin:10px;
+}
+
 /* Media queries */
 
 @media only screen and (max-width: 1000px) {
     .title-home {
         margin-top:10%;
-    }}
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .logo {
@@ -137,13 +142,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Navbar */
+
 #main-nav {
     background-color: white;
+    text-align:center;
 }
 
-.nav-link {
+.logo-font {
     color: #21403C !important;
     font-family: Alice, sans-serif;
+}
+
+.logo-font:hover {
+    color: white !important;
+}
+
+.nav-item {
+    margin:5px;
+}
+
+.nav-item:hover {
+    background-color: #63BFB5;
 }
 
 .btn-form {
@@ -180,7 +199,6 @@ h1, h2, h3, h4, h5, h6 {
     text-transform:uppercase;
     font-weight:800;
 }
-
 
 @media only screen and (max-width: 1030px) {
     .margin-product {

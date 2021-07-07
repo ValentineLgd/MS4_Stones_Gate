@@ -148,33 +148,35 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: -1;
 }
 
-.title-product {
+.color-product {
+    color: #21403C;
+}
+
+.margin-product {
     margin-top:17%;
+}
+.title-product {
     text-align: center;
     background-color: #eeebe3;
     text-transform:uppercase;
     font-weight:800;
 }
 
-.container-title-product {
-}
-
 
 @media only screen and (max-width: 1030px) {
-    .title-product {
+    .margin-product {
         margin-top:20%;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .title-home {
+    .margin-product {
         margin-top:10%;
     }
 }
 
-
 @media only screen and (max-width: 420px) {
-    .title-product {
+    .margin-product {
         margin-top:30%;
     }
 }

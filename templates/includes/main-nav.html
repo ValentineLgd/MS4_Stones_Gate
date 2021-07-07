@@ -17,10 +17,9 @@
                 By Category
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="bycategory-link">
-                <a href="" class="dropdown-item">Rings</a>
-                <a href="" class="dropdown-item">Earings</a>
-                <a href="" class="dropdown-item">Necklaces</a>
-                <a href="" class="dropdown-item">Bracelets</a>
+                <a href="{% url 'products' %}?category=earings_category" class="dropdown-item">Earings</a>
+                <a href="{% url 'products' %}?category=necklaces_category" class="dropdown-item">Necklaces</a>
+                <a href="{% url 'products' %}?category=bracelets_category" class="dropdown-item">Bracelets</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -30,9 +29,9 @@
                 By Mood
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="bymood-link">
-                <a href="" class="dropdown-item">Peaceful</a>
-                <a href="" class="dropdown-item">Energetic</a>
-                <a href="" class="dropdown-item">Fun</a>
+                <a href="{% url 'products' %}?mood=	peace_mood_category" class="dropdown-item">Peaceful</a>
+                <a href="{% url 'products' %}?mood=energetic_mood_category" class="dropdown-item">Energetic</a>
+                <a href="{% url 'products' %}?mood=fun_mood_category" class="dropdown-item">Fun</a>
             </div>
         </li>
 

@@ -209,6 +209,26 @@ h1, h2, h3, h4, h5, h6 {
     font-weight:800;
 }
 
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #eeebe3;
+    color: #21403C;
+    border: 1px solid #21403C;
+}
+
+.btt-button:hover {
+    color: #63BFB5;
+    border: 1px solid #63BFB5;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 1030px) {
     .margin-product {
         margin-top:20%;

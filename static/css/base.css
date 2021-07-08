@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #21403C;
 }
 
-.margin-product {
+.margin-top {
     margin-top:17%;
 }
 .title-product {
@@ -221,8 +221,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btt-button:hover {
-    color: #63BFB5;
+    background-color: #63BFB5;
     border: 1px solid #63BFB5;
+    color: #eeebe3;
 }
 
 .btt-link {
@@ -230,19 +231,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 1030px) {
-    .margin-product {
+    .margin-top {
         margin-top:20%;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .margin-product {
+    .margin-top {
         margin-top:10%;
     }
 }
 
 @media only screen and (max-width: 420px) {
-    .margin-product {
+    .margin-top {
         margin-top:30%;
     }
+    .list-inline-item {
+        font-size:12px;
+    }
+
+    .nav-link {
+        padding:0;
+    }
 }
+
+/* Shopping bag */
+

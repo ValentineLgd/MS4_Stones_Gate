@@ -84,7 +84,8 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
     background-color: #BF77BB;
     color: white;
-    margin: 0;
+    margin: 5px;
+    padding:8px;
     border-radius: 0;
 }
 

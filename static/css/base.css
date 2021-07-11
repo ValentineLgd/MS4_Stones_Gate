@@ -227,7 +227,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #eeebe3;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
@@ -272,4 +274,8 @@ form {
     border-bottom: 1px solid #eeebe3;
     text-align:center;
     margin-top: 3%;
+}
+
+.remove-item {
+    margin-left:30%;
 }

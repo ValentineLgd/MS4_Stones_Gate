@@ -231,6 +231,16 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
+.btn-qty {
+    margin: 8px;
+    padding:4px;
+    border-radius: 0;
+}
+
+form {
+    margin-top:0px !important;
+}
+
 @media only screen and (max-width: 1030px) {
     .margin-top {
         margin-top:20%;

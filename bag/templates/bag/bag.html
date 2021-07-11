@@ -21,21 +21,57 @@
         <div class="row">
             <div class="col">
                 {% if bag_items %}
-                    <div class="table-responsive rounded">
-                        {{ bag_items }}
+                <div class="container">
+                    {% for item in bag_items %}
+                    <div class="m-2">
+                        <p class="title-product-bag"><strong>{{ item.product.name }}</strong></p>
+                        <div class="row">
+                            <div class="col-12 d-flex">
+                                <div class="col-lg-3 col-md-7">
+                                    <img class="img-fluid" src="{{ item.product.image.url }}">
+                                </div>
+                                <div class="col-6">
+                                    <p><strong>Price:</strong> ${{ item.product.price }}</p>
+                                    <p><strong>Quantity:</strong> {{ item.quantity }}</p>
+                                    <p><strong>Subtotal:</strong> ${{ item.product.price }}</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                {% else %}
-                    <p class="lead text-center mt-5 mb-5">Your bag is empty 🤷‍♀️.</p>
-                    <div class="btn-container">
-                        <a href="{% url 'products' %}" class="btn btn-lg">
-                            <span class="icon">
-                                <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="text-uppercase">Keep Shopping</span>
-                        </a>
+                    {% endfor %}
+                        <div class="pt-5 text-right">
+                            <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
+                            <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
+                            <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                        </div>
+                        <div class="btn-container">
+                            <a href="{% url 'products' %}" class="btn btn-form">
+                                <span>
+                                    <i class="fas fa-angle-double-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <a href="" class="btn btn">
+                                <span class="text-uppercase">Secure Checkout</span>
+                                <span>
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </a>
+                        </div>
                     </div>
-                {% endif %}
+                </div>
             </div>
+            {% else %}
+            <p class="lead text-center mt-5 mb-5">Your bag is empty 🤷‍♀️.</p>
+            <div class="btn-container">
+                <a href="{% url 'products' %}" class="btn btn-lg">
+                    <span class="icon">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="text-uppercase">Keep Shopping</span>
+                </a>
+            </div>
+            {% endif %}
         </div>
     </div>
 {% endblock %}

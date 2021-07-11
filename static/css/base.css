@@ -258,3 +258,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Shopping bag */
 
+.title-product-bag {
+    border-bottom: 1px solid #eeebe3;
+    text-align:center;
+    margin-top: 3%;
+}

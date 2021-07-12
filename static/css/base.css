@@ -239,14 +239,26 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0;
 }
 
+.btn-remove {
+    background-color: red;
+    color: #black;
+}
+
 form {
     margin-top:0px !important;
+}
+
+@media only screen and (min-width: 900px) {
+    .remove-item {
+        margin-left:30%;
+    }
 }
 
 @media only screen and (max-width: 1030px) {
     .margin-top {
         margin-top:20%;
     }
+    
 }
 
 @media only screen and (max-width: 600px) {
@@ -266,6 +278,7 @@ form {
     .nav-link {
         padding:0;
     }
+
 }
 
 /* Shopping bag */
@@ -274,8 +287,4 @@ form {
     border-bottom: 1px solid #eeebe3;
     text-align:center;
     margin-top: 3%;
-}
-
-.remove-item {
-    margin-left:30%;
 }

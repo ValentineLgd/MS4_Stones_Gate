@@ -4,7 +4,6 @@ from django.shortcuts import render, redirect, reverse, HttpResponse
 
 def view_bag(request):
     """ A view that renders the bag contents page """
-
     return render(request, 'bag/bag.html')
 
 def add_to_bag(request, item_id):
@@ -25,7 +24,6 @@ def add_to_bag(request, item_id):
 
 def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
-
     quantity = int(request.POST.get('quantity'))
     bag = request.session.get('bag', {})
 

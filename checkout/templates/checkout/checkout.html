@@ -61,9 +61,9 @@
                         <p class="my-0">Grand Total:</p>
                     </div>
                     <div class="col-3">
-                        <p class="my-0 small">${{ total | floatformat:2 }}</p>
-                        <p class="my-0 small">${{ delivery | floatformat:2 }}</p>
-                        <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                        <p class="my-0 small">{{ total | floatformat:2 }}€</p>
+                        <p class="my-0 small">{{ delivery | floatformat:2 }}€</p>
+                        <p class="my-0"><strong>{{ grand_total | floatformat:2 }}€</strong></p>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                     </fieldset>
                     <p class="small text-danger">
-                        <span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+                        <span>Your card will be charged <strong>{{ grand_total|floatformat:2 }}€</strong></span>
                     </p>
 
                     <div class="submit-button text-center mb-2">                    

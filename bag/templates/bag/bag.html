@@ -31,7 +31,7 @@
                                     <img class="img-fluid" src="{{ item.product.image.url }}">
                                 </div>
                                 <div class="col-6 col-sm-8">
-                                    <p><strong>Price:</strong> ${{ item.product.price }}</p> 
+                                    <p><strong>Price:</strong> {{ item.product.price }}€</p> 
                                     <form class="form" action="{% url 'adjust_bag' item.item_id %}" method="POST">
                                         {% csrf_token %}
                                         <div>
@@ -65,16 +65,16 @@
                                             <a class="remove-item text-danger" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                                     </form>
                                     <br>
-                                    <p><strong>Subtotal:</strong> ${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                    <p><strong>Subtotal:</strong> {{ item.product.price | calc_subtotal:item.quantity }}€</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     {% endfor %}
                     <div class="pt-5 text-right">
-                        <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
-                        <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
-                        <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                        <h6><strong>Bag Total: {{ total|floatformat:2 }}€</strong></h6>
+                        <h6>Delivery: {{ delivery|floatformat:2 }}€</h6>
+                        <h4 class="mt-4"><strong>Grand Total: {{ grand_total|floatformat:2 }}€</strong></h4>
                     </div>
                     <div class="btn-container">
                         <a href="{% url 'products' %}" class="btn btn-form">

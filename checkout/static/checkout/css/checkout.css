@@ -1,0 +1,24 @@
+.order-summary {
+    border-bottom: 1px solid #eeebe3;
+    padding-bottom:8px;
+    margin-top:5%;
+}
+
+.hr-border-color {
+    border-color: #eeebe3;
+}
+
+.form-container {
+    margin-top:4%;
+}
+
+.form-title {
+    border-bottom: 1px solid #eeebe3;
+    padding-bottom:8px;
+}
+
+@media only screen and (min-width: 900px) {
+    .order-summary{
+        margin-top:10%;
+    }
+}

@@ -315,3 +315,13 @@ form {
 .bg-success {
     background-color: #63BFB5 !important;
 }
+
+/** Allauth forms **/
+
+.margin-top-sign {
+    margin-top:30%;
+}
+
+.margin-top-email {
+    margin-top:20%;
+}

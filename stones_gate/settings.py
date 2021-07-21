@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-a0q40#9+thw4-!2bg6%-$y*bjw%=1@t*@k)-j_e2*ht1hh(nlo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ms4-stones-gate.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['Ms4-Stones-Gate.herokuapp.com', 'localhost']
 
 
 # Application definition

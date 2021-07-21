@@ -13,12 +13,9 @@ class ProductForm(forms.ModelForm):
         categories = Category.objects.all()
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
         moods = Mood.objects.all()
-        friendly_names = [(m.id, m.get_friendly_name()) for m in moods]
+        moods_friendly_names = [(m.id, m.get_friendly_name()) for m in moods]
 
         self.fields['category'].choices = friendly_names
-        for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-black rounded-0'
-        
-        self.fields['mood'].choices = friendly_names
+        self.fields['mood'].choices = moods_friendly_names
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-0'

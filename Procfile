@@ -1,1 +1,1 @@
-web: gunicorn boutique_ado.wsgi:application 
+web: gunicorn stones_gate.wsgi:application 

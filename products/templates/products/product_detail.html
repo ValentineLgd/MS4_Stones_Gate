@@ -22,7 +22,7 @@
                                 {% csrf_token %}
                                 <div>
                                         <p class="mt-3"><strong>Quantity:</strong></p>
-                                        <div class="form-group w-50">
+                                        <div class="form-group w-100">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <button class="decrement-qty btn-qty btn-form" 
@@ -88,7 +88,7 @@
                             </small>
                         {% endif %}
                             <div class="form-row">
-                                <div class="col-12 btn-container">
+                                <div class="col-12 mt-4 btn-container">
                                     <a href="{% url 'products' %}" class="btn btn-form">
                                         <span>
                                             <i class="fas fa-angle-double-left"></i>

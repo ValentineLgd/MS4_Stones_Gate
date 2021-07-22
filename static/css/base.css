@@ -263,6 +263,7 @@ form {
     }
 }
 
+
 @media only screen and (max-width: 1030px) {
     .margin-top {
         margin-top:20%;
@@ -328,4 +329,5 @@ form {
 
 .margin-top-email {
     margin-top:20%;
+    padding : 5px;
 }

@@ -11,9 +11,8 @@
         {{ message }}        
     </div>
     {% if grand_total and not on_profile_page %}
-        <div class="btn-container">
-            <a href="{% url 'view_bag' %}" class="small btn-success btn-form btn">Access your bag</a>
-        </div>
-
+    <div class="btn-container">
+        <a href="{% url 'view_bag' %}" class="small btn-success btn-form btn">Access your bag</a>
+    </div>
     {% endif %}
 </div>

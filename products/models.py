@@ -2,6 +2,7 @@ from django.db import models
 
 # Code inspired from Boutique Ado - Vidéo Products Set up
 
+
 class Category(models.Model):
 
     class Meta:

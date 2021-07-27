@@ -1,9 +1,7 @@
 {% load static %}
-
 <!doctype html>
 <html lang="en">
   <head>
-
     {% block meta %}
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="utf-8">
@@ -62,7 +60,9 @@
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <div><i class="fas fa-user fa-lg"></i></div>
+                                <div>
+                                    <i class="fas fa-user fa-lg"></i>
+                                </div>
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
@@ -78,25 +78,25 @@
                                     <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                                 {% endif %}
                             </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="{% if grand_total %}bag_full{% else %}nag_none{% endif %} nav-link" href="{% url 'view_bag' %}">
-                                <div class="text-center">
-                                    <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                    <p class="my-0">
-                                        {% if grand_total %}
-                                            {{ grand_total|floatformat:2 }}€
-                                        {% else %}
-                                            0.00€
-                                        {% endif %}
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="{% if grand_total %}bag_full{% else %}nag_none{% endif %} nav-link" href="{% url 'view_bag' %}">
+                            <div class="text-center">
+                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                <p class="my-0">
+                                    {% if grand_total %}
+                                        {{ grand_total|floatformat:2 }}€
+                                    {% else %}
+                                        0.00€
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-12 col-lg4"></div>
+        </div>
+        <div class="col-12 col-lg4">
         </div>
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
@@ -108,8 +108,6 @@
             </nav>
         </div>  
     </header>
-
-
     {% if messages %}
         <div class="message-container">
             {% for message in messages %}
@@ -138,8 +136,6 @@
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
-    {% endblock %}
-
-    
+    {% endblock %}    
   </body>
 </html>

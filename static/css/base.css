@@ -140,6 +140,9 @@ h1, h2, h3, h4, h5, h6 {
     .title-home {
         margin-top:30%;
     }
+    .form-group {
+        width:100% !important;
+    }
 }
 
 /* Navbar */
@@ -256,6 +259,10 @@ form {
 @media only screen and (min-width: 900px) {
     .remove-item {
         margin-left:30%;
+    }
+    
+    .form-group {
+        width:50% !important;
     }
 }
 

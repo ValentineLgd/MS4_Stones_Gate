@@ -1,102 +1,51 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Stones Gate
 
-Welcome ValentineLgd,
+Stones Gate is a website aiming to serve as a e-shop for French hand-made jewellery with stones.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+In this website, user can buy hand-made jewellery according to each stones' unique properties.
+They also can register and integrate their personal informations in the website for further
+purchases.
 
-## Gitpod Reminders
+Only super users access to the create/edit/delete functionalities in order to protect the website & the database from random users deleting/editing.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## UX
 
-`python3 -m http.server`
+This website is my fourth MileStone project for my Fullstack Software Develpment diploma.
 
-A blue button should appear to click: _Make Public_,
+The aim of this website was to create a e-shop.
 
-Another blue button should appear to click: _Open Browser_.
+**External users goals**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+As a *new user*, I want to:
 
-A blue button should appear to click: _Make Public_,
+1. Easily understand the purpose & goals of the website
+2. Easily navigate through the website
+3. Access the current products catalogue to gain some inspiration on what to buy
+4. Sort order of products to find cheapest/most expensive products
+5. Find products that fits with particular moods 
+5. Get a synthetic overview of each product
+6. Be able to buy product(s) and get them deliver to my place
+7. Be able to view a total cost of a potential multiple purchase.
+8. Be able to search for a specific product.
 
-Another blue button should appear to click: _Open Browser_.
+As a *returning user*, I want to:
+1. Be able to quickly register my details & create a profile saving my personal details.
+2. Be able to view my previous purchases.
+3. Edit my personal details on my profile.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+As a *admin user*, I want to:
+1. Be able to add new products, and/or
+2. Be able to edit the products the user previously added, and/or
+3. Be able to delete the products the user previously added
+4. Be able to view, update and delete customer orders in the admin panel.
 
-To log into the Heroku toolbelt CLI:
+**Internal user goal**
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+As a site owner, I want to :
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+1. Share my knowledge on the stones I use to create my jewellery
+2. Give visibility to the products I created 
+3. Sell my products
+4. Protect the website against vandalism & random users deleting/updating the current catalogue in a destructive perspective by allowing only admin users to edit/delete the products they previously added.
 
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## User Experience

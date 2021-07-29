@@ -54,12 +54,14 @@ The shopping bag in the navbar, and then in the checkout page, automatically upd
 
 In the navbar, a search bar allows the user to search for a specific product.
 
+10. **Be able to register to a new account**
+By clicking on the "My account" icon in the navbar, I can access the Register page. An email confirmation is sent to the email provided by the user. By clicking on the link provided in this email, the user confirms his registration. 
 
 * As a *returning user*, I want to:
 
 1. **Be able to quickly register my details & create a profile saving my personal details.**
 
-By clicking on the "My account" icon in the navbar, I can access the Register page. An email confirmation is sent to the email provided by the user. By clicking on the link provided in this email, the user confirms his registration. 
+After registering, I can log in my account by clicking on the navbar on the "My account" and then "Log in" icon. By fulfilling the information and logging in I can then access a new section of the navbar in "My account". The "My profile" section leads to a page where the user can save/edit his personal information.
 
 2. **Be able to view my previous purchases.**
 

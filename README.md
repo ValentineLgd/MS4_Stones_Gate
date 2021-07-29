@@ -100,13 +100,15 @@ I used [Balsamic](https://balsamiq.com/) to build my wireframe prior to the webs
 
 The idea was to get an idea of what sections I would build and what design I would roughly create. Wireframes were built regarding desktop, tablet and phone versions:
 
-![Balsamic Wireframes (desktop, tablet, phone)](/workspace/MS4_Stones_Gate/documentation/wireframes/MS4_Desktop_Tablet_Phone_Wireframes.pdf/)
+![Balsamic Wireframes (desktop, tablet, phone)](/documentation/wireframes/MS4_Desktop_Tablet_Phone_Wireframes.pdf/)
 
 From the idea to the realization, a lot of changes have been performed.
 
 NB : I created this wireframe before starting coding the project but forgot to add it to the repository at the beginning.
 
 ## Features
+
+The website is classified by 7 applications: bag, checkout, home, products, profiles, stones_gate and templates.
 
 1. Existing Features
 
@@ -116,8 +118,24 @@ I use the simple and clear navigation code suggests in [Bootstrap]. All sections
 
 __Main content__ :
 
-I used Javascript to :
-XXXXXXXXXXXXXX
+I used Javascript in the following pages:
+
+- **Bag.html**: Javascript code was widely adapted from Code Institue - Boutique Ado in order to :
+1) Update quantity box 
+2) Remove item and reload on click
+
+- **Checkout.html > stripe_elements.js** : Javascript code was widely adapted from Code Institue - Boutique Ado in order to :
+1) Handle realtime validation errors on the card element
+2) Handle form submit
+
+- **Products.html** : Javascript code was widely adapted from Code Institue - Boutique Ado in order to :
+1) Add a button to go back to the top of the page 
+2) Functionality to sort products by price/notation/category/mood
+
+- **Product_details.html > quantity_input_script.html** : Javascript code was widely adapted from Code Institue - Boutique Ado in order to :
+1) Increment/decrement quantity
+2) Ensure proper enabling/disabling of all inputs on page load
+3) Disable +/- buttons outside 1-99 range
 
 2. Features to be added
 
@@ -127,6 +145,9 @@ Features that will be added later due to time constraints on the project.
 2. A pop up model appearing when deleting products to ensure products are not deleted by accident.
 
 ## Technologies used
+
+**Languages**
+
 - [HTML](https://developer.mozilla.org/fr/docs/Learn/HTML): The project uses HTML to create the content of the website and his structure.
 
 - [CSS](https://developer.mozilla.org/fr/docs/Web/CSS): The project uses CSS for the design of the website
@@ -135,7 +156,27 @@ Features that will be added later due to time constraints on the project.
 
 - [JQuery](https://jquery.com/): The project uses JQuery to manipulate the DOM.
 
+- [Python](https://www.python.org/): My main Back-End programming language.
+
+- [Jinja](https://en.wikipedia.org/wiki/Jinja_(template_engine) which provides the templating language for Python.
+
+**Frameworks & libraries**
+
 - [Django](https://www.djangoproject.com/) : The web framework encouraging rapid development and clean, pragmatic design. 
+
+- [Pip3](https://pip.pypa.io/en/stable/) : in order to install the tools, libraries and frameworks necessary to this project.
+
+- [AWS Amazon](https://aws.amazon.com/fr/) : in order to store static and media files.
+
+- [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) : for compatibility in AWS.
+
+- [Gunicorn](https://pypi.org/project/gunicorn/) : in order to enable deployment to Heroku.
+
+- [Spycopg2](https://pypi.org/project/gunicorn/) : in order to enable the PostGreSQL database to connect with Django.
+
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) : in order to style the Django forms
+
+- [Stripe](https://stripe.com/fr) : in order to secure payments
 
 - [Bootstrap](https://getbootstrap.com/): The project uses Bootstrap in the overall design. Grid, navbar, form, modal and many other features described in the Features' section were coded from Bootstrap interface.
 
@@ -145,29 +186,15 @@ Features that will be added later due to time constraints on the project.
 
 - [Heroku](https://dashboard.heroku.com/): Host of my full stack website.
 
-- [Python](https://www.python.org/): My main Back-End programming language.
-
-Flask
-
-Flask - Open-source micro framework for web development in Python
-
-Click - A Python package to create command line interfaces.
-
-DNSpython - Domain Name system toolkit used by Python
-
-Jinja - Useful to template in relation with Flask
-
-itsdangerous - Permits to cryptographically sign data
-
-Werkzeug - A CGI Library for Flask
-
-MongoDB: Storage of my database.
+## Databases
+- [SQlite3](https://www.sqlite.org/index.html): SQlite3 is the database used at the development phase.
+- [PostgreSQL](https://www.postgresql.org/) : PostgreSQL is the database used as the production database.
 
 ## Tools used
 - [Bootstrap](https://getbootstrap.com/):
 - [W3C HTML Validator](https://validator.w3.org/)
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-!!!!!!!!!!!!!!!!!! PEP8 Validator !!!!!!!!!!!!!!!!!!!!!!!
+- [PEP8 Validator](http://pep8online.com/)
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
 
 ## Testing
@@ -179,6 +206,17 @@ MongoDB: Storage of my database.
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 I run my style.css, checkout.css and profile.css codes through the validator & no errors were identified.
+
+- [PEP8 Online Validator](http://pep8online.com/):
+I run all the following python codes through the validator & no errors were identified:
+
+* bag app : contexts.py ; urls.py ; views.py ; admin.py ; apps.py ; models.py ; tests.py
+* checkout app : admin.py ; apps.py ; forms.py ; models.py ; signals.py ; urls.py ; views.py ; tests.py ; webhook_handler.py ; webhooks.py
+* home app : admin.py ; apps.py ; models.py ; tests.py ; urls.py ; views.py 
+* profiles app : admin.py ; apps.py ; forms.py ; models.py ; urls.py ; views.py 
+* stones_gate : asgi.py ; settings.py ; urls.py ; wsgi.py
+* custom_storages.py
+* manage.py
 
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
 

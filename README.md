@@ -14,61 +14,94 @@ This website is my fourth MileStone project for my Fullstack Software Develpment
 
 The aim of this website was to create a e-shop.
 
-**External users goals**
+**_External users goals_**
 
 As a *new user*, I want to:
 
-1. Easily understand the purpose & goals of the website
+1. **Easily understand the purpose & goals of the website**
+
 As a new user, I can read the description at the entrance of the website to quickly understand his goals.
-2. Easily navigate through the website
-The navbar and the buttons in the website are designed to allow an easy navigation through the website.
-3. Access the current products catalogue to gain some inspiration on what to buy
+
+2. **Easily navigate through the website**
+
+The navbar and the and the buttons in the website are designed to allow an easy navigation through the website.
+
+3. **Access the current products catalogue to gain some inspiration on what to buy**
+
 By clicking on "explore the shop" in the introduction page or by navigating through the several sections offered by the website, I can access the products catalogue & browse it.
-4. Sort order of products to find cheapest/most expensive products
+
+4. **Sort order of products to find cheapest/most expensive products**
+
 In the navbar, some items allow to sort products by their price, their notation or their category (earings, necklaces, rings) and the moods they relate to (energetic, peaceful or fun).
-5. Find products that fits with particular moods 
+
+5. **Find products that fits with particular moods**
+
 In the navbar, some items allow to sort products by the moods they relate to (energetic, peaceful or fun).
-5. Get a synthetic overview of each product
+
+6. **Get a synthetic overview of each product**
+
 Once the user clicks on one particular product, a quick presentation of the properties of the stone is given. The price, the category and the mood it relates appear too.
-6. Be able to buy product(s) and get them deliver to my place
+
+7. **Be able to buy product(s) and get them deliver to my place**
+
 I can checkout and buy a product and provide my address to get it deliver to my place.
-7. Be able to view a total cost of a potential multiple purchase.
+
+8. **Be able to view a total cost of a potential multiple purchase.**
+
 The shopping bag in the navbar, and then in the checkout page, automatically update when the total cost of purchases change.
-8. Be able to search for a specific product.
+
+9. **Be able to search for a specific product.**
+
 In the navbar, a search bar allows the user to search for a specific product.
 
 As a *returning user*, I want to:
-1. Be able to quickly register my details & create a profile saving my personal details.
+
+1. **Be able to quickly register my details & create a profile saving my personal details.**
+
 By clicking on the "My account" icon in the navbar, I can access the Register page. An email confirmation is sent to the email provided by the user. By clicking on the link provided in this email, the user confirms his registration. 
-2. Be able to view my previous purchases.
+
+2. **Be able to view my previous purchases.**
+
 As a registered user, the user can see his previous purchases inside the "my profile" section of the website.
-3. Edit my personal details on my profile.
+
+3. **Edit my personal details on my profile.**
+
 As a registered user, the user can update his personal informations in the "my profile" icon that appears in the website.
 
+
 As a *admin user*, I want to:
-1. Be able to add new products,
+1. **Be able to add new products**
+
 For admin users, a section 'product management' appears in the 'my profile' part of the navbar. By clicking on it, the admin user can add a new product with or without picture. Messages are provided to the admin user everytime a change is made.
 
-2. Be able to edit the products the user previously added
+2. **Be able to edit the products the user previously added**
+
 Admin user can access a button in the product catalogue or inside the product details page allowing them to edit the current information. Messages are provided to the admin user everytime a change is made.
 
-3. Be able to delete products
+3. **Be able to delete products**
+
 Admin user can access a button in the product catalogue or inside the product details page allowing them to delete the product. Messages are provided to the admin user everytime a deletion is made.
 
-4. Be able to view, update and delete customer orders in the admin panel.
+4. **Be able to view, update and delete customer orders in the admin panel.**
+
 In the admin panel, the admin user can access, update or delete customer orders.
 
-**Internal user goal**
+**_Internal user goal_**
 
 As a site owner, I want to :
 
-1. Share my knowledge on the stones I use to create my jewellery
+1. **Share my knowledge on the stones I use to create my jewellery**
+
 Every product is presented in the product details page with a description regarding the stone it is made with.
-2. Give visibility to the products I created 
+
+2. **Give visibility to the products I created**
 Isn't it this all website's purpose?!
-3. Safely sell my products
+
+3. **Safely sell my products**
+
 Users can buy easily and safely the products through the use of Stripe's plateform
-4. Protect the website against vandalism & random users deleting/updating the current catalogue in a destructive perspective by allowing only admin users to edit/delete the products they previously added.
+
+4. **Protect the website against vandalism & random users deleting/updating the current catalogue in a destructive perspective by allowing only admin users to edit/delete the products they previously added.**
 
 ## Design
 
@@ -80,19 +113,19 @@ In this way I decided to choose a simple contrast between three colors choosen t
 
 __Typography__
 
-Regarding the typography, I decided to use 2 Google fonts :
+Regarding the typography, I decided to use 2 Google fonts:
 
-**Alice** : because of his soft-rounded features, as it looks like the typography of a supernatural book and fits well with the environment of the website.
-**Quicksand** : to contrast with the round effect given by Alice & give more substance to the paragraph with a more classic typography.
-Icons I decided to use Fontawesome in order to provide illustrations in my website as it offers a wide catalogue of icons.
+**[Alice](https://fonts.google.com/specimen/Alice)** : because of his soft-rounded features, as it looks like the typography of a supernatural book and fits well with the environment of the website.
+
+**[Quicksand](https://fonts.google.com/specimen/Quicksand)** : to contrast with the round effect given by Alice & give more substance to the paragraph with a more classic typography.
+
+**Icons** : I decided to use [Fontawesome](https://fontawesome.com/) in order to provide illustrations in my website as it offers a wide catalogue of icons.
 
 ## Frameworks
 
-1. [Flask](https://flask.palletsprojects.com/en/2.0.x/) : A framework written in Python that gives a lot of flexibility to the coding
+1. [Bootstrap](https://getbootstrap.com/) : I decided to stick to bootstrap as I find some of the functionalities really easy & handy to use and like his overall design & flexibility.
 
-2. [Bootstrap](https://getbootstrap.com/) : I decided to stick to bootstrap as I find some of the functionalities really easy & handy to use and like his overall design & flexibility.
-
-3. [DJango](https://www.djangoproject.com/) : I used Django framework to build this website as required by Code Institute.
+2. [DJango](https://www.djangoproject.com/) : I used Django framework to build this website as required by Code Institute.
 
 ## Wireframes
 
@@ -100,23 +133,23 @@ I used [Balsamic](https://balsamiq.com/) to build my wireframe prior to the webs
 
 The idea was to get an idea of what sections I would build and what design I would roughly create. Wireframes were built regarding desktop, tablet and phone versions:
 
-![Balsamic Wireframes (desktop, tablet, phone)](/documentation/wireframes/MS4_Desktop_Tablet_Phone_Wireframes.pdf/)
+![Balsamic Wireframes (desktop, tablet, phone)](../documentation/wireframes/MS4_Desktop_Tablet_Phone_Wireframes.pdf/)
 
 From the idea to the realization, a lot of changes have been performed.
 
-NB : I created this wireframe before starting coding the project but forgot to add it to the repository at the beginning.
+**NB** : I created this wireframe before starting coding the project but forgot to add it to the repository at the beginning.
 
 ## Features
 
 The website is classified by 7 applications: bag, checkout, home, products, profiles, stones_gate and templates.
 
-1. Existing Features
+### **1. Existing Features**
 
-__Navigation__ :
+__*Navigation*__ :
 
 I use the simple and clear navigation code suggests in [Bootstrap]. All sections are presented to ease the user experience and direct to relevant links when clicked.
 
-__Main content__ :
+__*Main content*__ :
 
 I used Javascript in the following pages:
 
@@ -137,7 +170,8 @@ I used Javascript in the following pages:
 2) Ensure proper enabling/disabling of all inputs on page load
 3) Disable +/- buttons outside 1-99 range
 
-2. Features to be added
+
+### **2. Features to be added**
 
 Features that will be added later due to time constraints on the project.
 
@@ -158,7 +192,7 @@ Features that will be added later due to time constraints on the project.
 
 - [Python](https://www.python.org/): My main Back-End programming language.
 
-- [Jinja](https://en.wikipedia.org/wiki/Jinja_(template_engine) which provides the templating language for Python.
+- [Jinja](https://en.wikipedia.org/wiki/Jinja_(template_engine)) which provides the templating language for Python.
 
 **Frameworks & libraries**
 
@@ -191,7 +225,7 @@ Features that will be added later due to time constraints on the project.
 - [PostgreSQL](https://www.postgresql.org/) : PostgreSQL is the database used as the production database.
 
 ## Tools used
-- [Bootstrap](https://getbootstrap.com/):
+- [Bootstrap](https://getbootstrap.com/)
 - [W3C HTML Validator](https://validator.w3.org/)
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 - [PEP8 Validator](http://pep8online.com/)
@@ -199,32 +233,33 @@ Features that will be added later due to time constraints on the project.
 
 ## Testing
 
-1. Testing tools used
+**1. Testing tools used**
 
-- [W3C HTML Validator](https://validator.w3.org/) - I run my url website through the validator & errors identified were linked to the use of [Ginger](https://ginger.readthedocs.io/en/latest/) language (presence of "{{ }}" or whitespace in ID format, absence of head section or language at the top of each page, etc.)
+- [W3C HTML Validator](https://validator.w3.org/) - I run all my html files through the validator & errors identified were linked to the use of [Ginger](https://ginger.readthedocs.io/en/latest/) language (presence of "{{ }}" or whitespace in ID format, absence of head section or language at the top of each page, etc.)
 
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-
-I run my style.css, checkout.css and profile.css codes through the validator & no errors were identified.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - I run my `style.css`, `checkout.css` and `profile.css` codes through the validator & no errors were identified.
 
 - [PEP8 Online Validator](http://pep8online.com/):
 I run all the following python codes through the validator & no errors were identified:
 
-* bag app : contexts.py ; urls.py ; views.py ; admin.py ; apps.py ; models.py ; tests.py
-* checkout app : admin.py ; apps.py ; forms.py ; models.py ; signals.py ; urls.py ; views.py ; tests.py ; webhook_handler.py ; webhooks.py
-* home app : admin.py ; apps.py ; models.py ; tests.py ; urls.py ; views.py 
-* profiles app : admin.py ; apps.py ; forms.py ; models.py ; urls.py ; views.py 
-* stones_gate : asgi.py ; settings.py ; urls.py ; wsgi.py
-* custom_storages.py
-* manage.py
+    * **bag app** : `contexts.py` ; `urls.py` ; `views.py` ; `admin.py` ; `apps.py` ; `models.py` ; `tests.py`
+    * **checkout app** : `admin.py` ; `apps.py` ; `forms.py` ; `models.py` ; `signals.py` ; `urls.py` ; `views.py` ; `tests.py` ; `webhook_handler.py` ; `webhooks.py`
+    * **home app** : `admin.py` ; `apps.py` ; `models.py` ; `tests.py` ; `urls.py` ; `views.py`
+    * **profiles app** : `admin.py` ; `apps.py` ; `forms.py` ; `models.py` ; `urls.py` ; `views.py` 
+    * **stones_gate** : `asgi.py` ; `settings.py` ; `urls.py` ; `wsgi.py`
+    * **`custom_storages.py`**
+    * **`manage.py`**
 
-- [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
 
-No problems identified regarding design & responsiveness for the following devices:
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - No problems identified regarding design & responsiveness for the following devices:
+
 __Phone__: Moto G4, Galaxy S5, Pixel 2, Pixel 2 XL, Iphone 5/SE, Iphone 6/7/8, Iphone 6/7/8 Plus, Iphone X
+
 __Tablet__: Ipad, Ipad Pro, Surface Duo
 
-2. Test UX
+
+**2. Test UX**
+
 Details of the full test performed (with screenshots) on this project can be found here.
 
 
@@ -234,12 +269,12 @@ Because of their clarity & transparence, I widely adapted this section from the 
 
 **Tools used to deploy**
 
-- Github
-- Heroku
-- Python3
-- Stripe
-- Gmail
-- AWS Amazon Account
+- **Github**
+- **Heroku**
+- **Python3**
+- **Stripe**
+- **Gmail**
+- **AWS Amazon Account**
 
 **Clone the project** 
 
@@ -258,15 +293,22 @@ To make a local clone:
 - Create a `.env` file. which contains these environment variables:
 
 > Import os
+
 > os.environ("SECRET_KEY", "To be added by the developer")
+
 > os.environ("STRIPE_PUBLIC_KEY", "To be added by the developer")
+
 > os.environ("STRIPE_SECRET_KEY", "To be added by the developer")
+
 > os.environ("STRIPE_WH_SECRET", "To be added by the developer")
+
 > os.environ("MAILCHIMP_API_KEY", "To be added by the developer")
+
 > os.environ("MAILCHIMP_DATA_CENTER", "To be added by the developer")
+
 > os.environ("MAILCHIMP_EMAIL_LIST_ID", "To be added by the developer")
 
-- Add the .env file to the .gitignore file. 
+- Add the `.env` file to the `.gitignore` file. 
 
 3. Migrate the models to create the database with these commands:
 
@@ -285,41 +327,44 @@ To make a local clone:
 - `python3 manage.py createsuperuser`
 - Enter your username, email and password.
 
-6. Run the app: Open your terminal window in your IDE and type: `python3 manage.py runserver`
+6. Run the app: Open your terminal window in your IDE and type: 
+`python3 manage.py runserver`
 
 7. Then, to acces the admin environment, you can add `/admin` at the end of your url and login with the superuser.
 
 **Heroku Deployment**
 
-1. Set up local workspace for Heroku
+1. **Set up local workspace for Heroku**
 
 - In terminal window type: `pip3 freeze -- local > requirements.txt.`
-- In termial window type: `web: gunicorn <name app>.wsgi:application` to create a Procfile
+- In terminal window type: `web: gunicorn <name app>.wsgi:application` to create a Procfile
 - Push all these files to Github
 
-2. Set up Heroku
+2. **Set up Heroku**
 - Create an account, a new app and select a region
 - Search for postgess inside 'resources' section. Select the free version and add it to the project.
 - Set up the settings inside the 'settings' section  by going on **Config Vars**. After revealing the variables, you then add the following variables:
 
-| KEY	| VALUE |
---------|-------|
-|AWS_ACCESS_KEY_ID	| <aws access key>|
-| AWS_SECRET_ACCESS_KEY	| <aws secret access key> |
-| DATABASE_URL |	<postgres database url> |
-| EMAIL_HOST_PASS |	<email password(generated by Gmail)> |
-| EMAIL_HOST_USER | <email address> |
-| SECRET_KEY	| <your secret key> |
-| STRIPE_PUBLIC_KEY	| <your stripe public key> | 
-| STRIPE_SECRET_KEY	| <your stripe secret key> | 
-| STRIPE_WH_SECRET	| <your stripe wh key> |
-| USE_AWS |	True |
+| VALUE | KEY |
+| ------|----|
+| **AWS_ACCESS_KEY_ID** | aws access key |  
+| **AWS_SECRET_ACCESS_KEY** | aws secret access key|
+| **DATABASE_URL** | postgres database url|
+| **EMAIL_HOST_PASS** | email password(generated by Gmail)|
+| **EMAIL_HOST_USER** | email address |
+| **SECRET_KEY** | your secret key|
+| **STRIPE_PUBLIC_KEY** | your stripe public key|
+| **STRIPE_SECRET_KEY** | your stripe secret key|
+| **STRIPE_WH_SECRET** | your stripe wh key|
+| **USE_AWS** | True|
 
-3. Set up the database
+3. **Set up the database**
 
 - Copy the DATABASE_URL from the config variables of Heroku and past it into the default database in `setting.py`: 
 >DATABASES = {
+>    
 >    'default': dj_database_url.parse("<DATABASE_URL here>")
+>
 >}
 
 - Migrate models to create the database by typing the following commands in the terminal:
@@ -341,15 +386,17 @@ Now you can remove the DATABASE_URL from `settings.py` and set the 'old' default
 
 - Push to Github.
 
-4. Connect with Heroku
+4. **Connect with Heroku**
 
 - Connect to GitHub in the deploy section in Heroku: Search the repository to connect with. (Click on connect)
 - Set automatic deployments ('Deploy' tab > Automatic deployment > Enable Automatic Deploys). Then, by clicking on **Open App** the app will open and the live link will be available from the address bar.
 
-5. Host static and media files with AWS
-Static and media files are hosted in the AWS S3 Bucket. 
+5. **Host static and media files with AWS
+Static and media files are hosted in the AWS S3 Bucket.**
+
 In order to host its, an account, a S3 bucket, a group, a policy and a user needs to be set up in the IAM environement. 
-More information:
+
+_More information:_
 - about S3 Bucket storage can be found [here](https://aws.amazon.com/fr/s3/).
 - about the storage in your project click [here](https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html)
 

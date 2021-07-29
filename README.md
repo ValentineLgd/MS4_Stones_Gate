@@ -16,7 +16,7 @@ The aim of this website was to create a e-shop.
 
 **_External users goals_**
 
-As a *new user*, I want to:
+* As a *new user*, I want to:
 
 1. **Easily understand the purpose & goals of the website**
 
@@ -54,7 +54,8 @@ The shopping bag in the navbar, and then in the checkout page, automatically upd
 
 In the navbar, a search bar allows the user to search for a specific product.
 
-As a *returning user*, I want to:
+
+* As a *returning user*, I want to:
 
 1. **Be able to quickly register my details & create a profile saving my personal details.**
 
@@ -69,7 +70,8 @@ As a registered user, the user can see his previous purchases inside the "my pro
 As a registered user, the user can update his personal informations in the "my profile" icon that appears in the website.
 
 
-As a *admin user*, I want to:
+* As a *admin user*, I want to:
+
 1. **Be able to add new products**
 
 For admin users, a section 'product management' appears in the 'my profile' part of the navbar. By clicking on it, the admin user can add a new product with or without picture. Messages are provided to the admin user everytime a change is made.
@@ -88,7 +90,7 @@ In the admin panel, the admin user can access, update or delete customer orders.
 
 **_Internal user goal_**
 
-As a site owner, I want to :
+* As a _site owner_, I want to :
 
 1. **Share my knowledge on the stones I use to create my jewellery**
 

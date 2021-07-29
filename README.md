@@ -30,7 +30,7 @@ The navbar and the and the buttons in the website are designed to allow an easy 
 
 By clicking on "explore the shop" in the introduction page or by navigating through the several sections offered by the website, I can access the products catalogue & browse it.
 
-4. **Sort order of products to find cheapest/most expensive products**
+4. **Sort products to find the most expensive/cheapest ones**
 
 In the navbar, some items allow to sort products by their price, their notation or their category (earings, necklaces, rings) and the moods they relate to (energetic, peaceful or fun).
 

@@ -133,7 +133,7 @@ I used [Balsamic](https://balsamiq.com/) to build my wireframe prior to the webs
 
 The idea was to get an idea of what sections I would build and what design I would roughly create. Wireframes were built regarding desktop, tablet and phone versions:
 
-[Balsamic Wireframes](documentation/wireframes/MS4_Wireframes.pdf)
+[Balsamic Wireframes](https://github.com/ValentineLgd/MS4_Stones_Gate/blob/main/documentation/wireframes/MS4_Wireframes.pdf)
 
 From the idea to the realization, a lot of changes have been performed.
 
@@ -260,7 +260,7 @@ __Tablet__: Ipad, Ipad Pro, Surface Duo
 
 **2. Test UX**
 
-Details of the full test performed (with screenshots) on this project can be found [here](documentation/tests/Tests UX.pdf).
+Details of the full test performed (with screenshots) on this project can be found [here](https://github.com/ValentineLgd/MS4_Stones_Gate/blob/main/documentation/tests/Tests%20UX.pdf).
 
 
 ## Deployment

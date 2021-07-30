@@ -1,3 +1,5 @@
+# This code is adapted from Boutique Ado - Code institute lessons
+
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.template.loader import render_to_string

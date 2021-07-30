@@ -1,3 +1,5 @@
+# This code is adapted from Boutique Ado - Code institute lessons
+
 import uuid
 
 from django.db import models

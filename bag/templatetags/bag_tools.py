@@ -1,3 +1,5 @@
+# This code is widely adapted from Boutique Ado - Code institute lessons
+
 from django import template
 
 

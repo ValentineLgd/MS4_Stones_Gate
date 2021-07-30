@@ -1,3 +1,5 @@
+# This code is adapted from Boutique Ado - Code institute lessons
+
 from django.shortcuts import render
 
 # Create your views here.

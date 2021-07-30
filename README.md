@@ -133,7 +133,7 @@ I used [Balsamic](https://balsamiq.com/) to build my wireframe prior to the webs
 
 The idea was to get an idea of what sections I would build and what design I would roughly create. Wireframes were built regarding desktop, tablet and phone versions:
 
-![Balsamic Wireframes (desktop, tablet, phone)](../documentation/wireframes/MS4_Desktop_Tablet_Phone_Wireframes.pdf/)
+![Balsamic Wireframes](documentation/wireframes/MS4_Desktop_Tablet_Phone_Wireframes.pdf)
 
 From the idea to the realization, a lot of changes have been performed.
 
